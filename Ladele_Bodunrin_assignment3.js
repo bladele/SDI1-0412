@@ -1,6 +1,14 @@
-// How my family uses the IOS Devices.
+// Apple Inc House: How my family uses the IOS Devices
 // Author: Bodunrin Ladele
 // Created for: SDI Online
-// How Viewing Entertainment is consumed in my home.
+// Control File
 
-var dad = { name: "Bibi", age: 32, devices: ["iphone 4", "macbook pro", "apple tv"]}
+var handleData = function (json) {
+	for (var i = 0; i < json.family.length; i++){
+		var family = json.family[i];
+		console.log("User ID: : " + friend.uuid + ", Name: " + family.name + ", Age: " +
+		famliy.age);
+		};
+};
+
+handleData(myHouse);
