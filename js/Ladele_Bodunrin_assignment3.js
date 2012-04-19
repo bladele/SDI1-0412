@@ -29,13 +29,22 @@ var handleData = function(json) {
 
 handleData(houseHold);
 
+console.log("To calculate each family members expertise score,",
+	" I multiplied each user adoption rate score by the number of activities they perform",
+	" with their IOS devices.")
 var expertise = function(json) {
-	for (var i = 0; i <json.family.length; i++) {
+	for (var i = 0; i < json.family.length; i++) {
 	var family = json.family[i];
-	console.log("To calculate" + family.activity.length * family.adoptionRate);
+	console.log( "Name: "+ family.name + " Expertise: " + family.activity.length * family.adoptionRate);
 	};
 };
 expertise(houseHold);
+
+console.log("Being the Geeky Dad that I am, I use as much tech as I can afford to make life",
+			" better for the family.");
+console.log("As tech in the world advances ever so rapidly, I hope to instill", 
+			" a love for tech and the innovative ways it can be used in my loved ones.");
+console.log("Here is what I think of my progress...");
 
 
 console.log(houseHold.family[0].name);
