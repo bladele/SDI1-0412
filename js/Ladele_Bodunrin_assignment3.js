@@ -46,5 +46,19 @@ console.log("As tech in the world advances ever so rapidly, I hope to instill",
 			" a love for tech and the innovative ways it can be used in my loved ones.");
 console.log("Here is what I think of my progress...");
 
+var praise = function(json) {
+	for (var i = 0; i < json.family.length; i++) {
+	var family = json.family[i];
+	};
+	if (houseHold.family.activity.length * family.adoptionRate < 30 )
+	console.log(family.name + "The force is strong with you.");
+	else {
+	console.log(family.name + "The force is not so strong with you.");
+	}	
+};
 
-console.log(houseHold.family[0].name);
+praise();
+
+
+
+console.log(houseHold.family[0].name.length);
