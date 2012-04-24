@@ -48,18 +48,18 @@ console.log("Here is what I think of my progress...");
 
 
 var praise = function(json) {
-	for (var i = 0; i < json.family.length; i++) {
-	var family = json.family[i];
-	};
-	if (houseHold.family.activity.length * family.adoptionRate < 30 )
-	console.log(family.name + "The force is strong with you.");
-	else {
-	console.log(family.name + "The force is not yet strong with you.");
-	}	
-};
+	alert(json.family.length);
+	//for (var i = 0; i < json.family.length; i++) {
+//	var family = json.family[i];
+//	};
+//	if (houseHold.family.activity.length * family.adoptionRate < 30 )
+//	console.log(family.name + "The force is strong with you.");
+//	else {
+//	console.log(family.name + "The force is not yet strong with you.");
+	}
 
-praise();
+praise(houseHold);
 
 
 
-console.log(houseHold.family[0].name.length);
+console.log(houseHold.family[0].name);
