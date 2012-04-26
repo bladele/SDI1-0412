@@ -9,20 +9,20 @@
 //
 
 // Declare an empty class that will house the functions
-function Utility.()
+var Utility = function ()
 {
-}
+};
 
 // checks to see if the given string is a valid phone number
 Utility.isPhoneNumber = function(checkString)
 {
 	// Use RegExp to check for valid phone number
-	var patt = /\d{3}-\d{3}-\d{4}/;
+	var patt = /\d{3}\d{3}\d{4}/;
 	
 	var result = patt.test(checkString);
 
 	return result;
-}
+};
 
 // Check to see if the given string is a valid email address
 Utility.isEmail = function(checkString)
@@ -31,7 +31,7 @@ Utility.isEmail = function(checkString)
 	var patt = /\w+@\w+.\w{2,3}$/;
 	var result = patt.test(checkString);
 	return result;
-}
+};
 
 // Check to see if the given string is a valid URL (begins with http or https)
 Utility.isURL = function(checkString)
@@ -81,8 +81,8 @@ utility.keySort = function(keyName, array)
 {
 }
 
-// Return the passed in string as an integer.  If the string
-// is NOT a valid integer, return 0
+/* Return the passed in string as an integer.  If the string
+ is NOT a valid integer, return 0*/
 Utility.stringToNum = function(strNum)
 {
 	var theNum = ParseInt(strNum);
@@ -111,4 +111,6 @@ Utility.findSumOfNumbers = function(theArray)
 	return total;
 }
 
-
+/* Title-case a string: Split a string into 2 words and 
+change to uppercase first letter of each word.*/
+uti
