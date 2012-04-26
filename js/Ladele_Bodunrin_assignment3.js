@@ -3,6 +3,8 @@
 // Created for: SDI Online
 // Control File
 
+console.log(houseHold.family[0].name);
+
 console.log("Today we will be looking at the Ladele family and how they use their IOS devices.")
 console.log("Here are the members of the family...")
 

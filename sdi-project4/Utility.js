@@ -5,11 +5,11 @@
 
 
 //
-// Utility class - this is a collection of utility functions
+// Utility Object class - this is a collection of utility functions
 //
 
 // Declare an empty class that will house the functions
-function Utility()
+function Utility.()
 {
 }
 
@@ -77,7 +77,7 @@ Utility.smallestGreaterThan = function(check, array)
 {
 }
 
-Utility.keySort = function(keyName, array)
+utility.keySort = function(keyName, array)
 {
 }
 
@@ -99,7 +99,7 @@ Utility.findSumOfNumbers = function(theArray)
 {
 	var len = theArray.lenth;
 	var total = 0;
-	for(int i=0; i<len; i++)
+	for(i=0; i<len; i++)
 	{
 		var possibleNum = ParseInt(theArray[i]);
 		
