@@ -1,11 +1,10 @@
 // Library: Utility Check
 // Author: Bodunrin Ladele
 // Created for: SDI Online
-// Control File
+// Test File
 
 
-
-    function checkPhone()
+ function checkPhone()
 	{
 		var strNum = document.getElementById("txtPhone").value;
 		var bValid = Utility.isPhoneNumber(strNum);
@@ -21,7 +20,7 @@
 		alert("The text " + strNum + " " + strResult + " a valid phone number!");
 	}
 	
-	function checkEmail()
+function checkEmail()
 	{
 		var strMail = document.getElementById("txtEmail").value;
 		var bValid = Utility.isEmail(strMail);
@@ -37,7 +36,7 @@
 		alert("The text " + strMail + " " + strResult + " a valid email address!");
 	}
 	
-	function checkUrl()
+function checkUrl()
 	{
 		var strUrl = document.getElementById("txtUrl").value;
 		var bValid = Utility.isURL(strUrl);
@@ -54,7 +53,7 @@
 	}
 	
    
-    function checkFuzzyMatch()
+function checkFuzzyMatch()
 	{
 		var refNum = document.getElementById("refNum").value;
 		var checkNum = document.getElementById("numCheck").value;
