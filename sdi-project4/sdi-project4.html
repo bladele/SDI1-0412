@@ -15,7 +15,109 @@
 <footer>
     <p>1204, Bodunrin Ladele</p>
 </footer>
-<script type="text/javascript" src="js/Ladele_Bodunrin_assignment4_jsondata.js"></script>
+ <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="Ladele_Bodunrin_assignment4.js"></script>
+<script type="text/javascript">
+   // we will add our javascript code here
+   $(document).ready(function() 
+   {
+		$("a").click(function() 
+		{
+			alert("Hello from JQuery!");
+		});
+	});
+   
+    function checkPhone()
+	{
+		var strNum = document.getElementById("txtPhone").value;
+		var bValid = Utility.isPhoneNumber(strNum);
+		var strResult;
+		if (bValid == true)
+		{
+			strResult = "IS";
+		}
+		else
+		{
+			strResult = "IS NOT";
+		}
+		alert("The text " + strNum + " " + strResult + " a valid phone number!");
+	}
+	
+	function checkEmail()
+	{
+		var strMail = document.getElementById("txtEmail").value;
+		var bValid = Utility.isEmail(strMail);
+		var strResult;
+		if (bValid == true)
+		{
+			strResult = "IS";
+		}
+		else
+		{
+			strResult = "IS NOT";
+		}
+		alert("The text " + strMail + " " + strResult + " a valid email address!");
+	}
+	
+	function checkUrl()
+	{
+		var strUrl = document.getElementById("txtUrl").value;
+		var bValid = Utility.isURL(strUrl);
+		var strResult;
+		if (bValid == true)
+		{
+			strResult = "IS";
+		}
+		else
+		{
+			strResult = "IS NOT";
+		}
+		alert("The text " + strUrl + " " + strResult + " a valid Url!");
+	}
+	
+   
+    function checkFuzzyMatch()
+	{
+		var refNum = document.getElementById("refNum").value;
+		var checkNum = document.getElementById("numCheck").value;
+		var pct = document.getElementById("pctWithin").value;
+		
+		var result = Utility.fuzzyMatch(refNum, checkNum, pct);
+		var strResult;
+		if (result == true)
+		{
+			strResult = "IS";
+		}
+		else
+		{
+			strResult = "IS NOT";
+		}
+		alert("The number " + checkNum + " " + strResult + " within " + pct + " percent of " + refNum + "!");
+		
+	}
+   
+ </script> 
+  <!-- we will add our HTML content here -->
+   This is HELLO JQUERY in plain HMTL code.<p />
+   <a href="">A Link</a>
+   <p />
+   Phone check: <input type="text" id="txtPhone" width="40" />
+   <p />
+   <button type="button" onclick="checkPhone()">Check Phone</button>
+   <p />
+   Email check: <input type="text" id="txtEmail" width="60" />
+   <p />
+   <button type="button" onclick="checkEmail()">Check Email</button>
+   <p />
+   URL check: <input type="text" id="txtUrl" width="60" />
+   <p />
+   <button type="button" onclick="checkUrl()">Check Url</button>
+   <p />
+   Fuzzy Match check - ref Num: <input type="text" id="refNum" width="40" /><br />
+   Number to Check: <input type="text" id="numCheck" width="40" /><br />
+   Percentage Allowance: <input type="text" id="pctWithin" width="40" />
+   <p />
+   <button type="button" onclick="checkFuzzyMatch()">Check Fuzzy </button>
+   
 </body>
 </html>
