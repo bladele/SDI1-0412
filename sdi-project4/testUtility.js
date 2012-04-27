@@ -88,7 +88,6 @@ function howMuch()
 		var givMe = Utility.stringToNum(strSum);
 		var hereUgo;
 		if (givMe >= 0)
-		//I dont know what I am doing wrong here.
 		{
 		alert("Here's $" + hereUgo + ".")
 	    }
